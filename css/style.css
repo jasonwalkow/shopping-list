@@ -1,0 +1,145 @@
+body {
+	background-color: #6DD4BD;
+	font-family: 'Montserrat', sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	background: none;
+	border: none;
+}
+
+.app {
+	background: #F0F067;
+	border-radius: 30px;
+	width: 50em;
+	height: 50em;
+	margin: 1em auto;
+	overflow: hidden;
+	height: 1%;
+}
+
+h1 {
+	font-size: 4.5em;
+	color: #6DD4BD;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 0em;
+	margin-bottom: 0em;
+}
+
+.add {
+	color: #6DD4BD;
+	padding-left: 1em;
+}
+
+.add-text {
+	padding-left: 0em;
+}
+
+.container {
+	position: relative;
+	background-color: #F8F89F;
+	border-radius: 10px;
+	padding: 0.2em 1em;
+	margin: 1em 5em;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: #6DD4BD;
+	text-transform: uppercase;
+}
+
+#purchased-title {
+	font-size: 1.5em;
+	color: #B2B2B2;
+	text-transform: uppercase;
+}
+
+.to-buy {
+	color: #5E5E5E;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.edit-delete p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.edit {
+	font-size: .8em;
+	color: #A0A0A0;
+	border-right: 1px solid #fff;
+	padding-right: 0.6em;
+}
+
+.delete {
+	font-size: .8em;
+	color: #DB5959;
+	padding-left: 0.25em;
+}
+
+.edit:hover,
+.delete:hover,
+.add:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+input[type="text"] {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 3px;
+    width: 25em;
+    height: 1.5em;
+    margin-left: 1em;
+}
+
+input[type="text"].add-item {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 3px;
+    width: 25em;
+    height: 1.5em;
+    margin-left: 0em;
+}
+
+input[type="checkbox"] {
+    border: none;
+}
+
+ul li {
+	display: inline-block;
+}
+
+.bought {
+	color: #CACACA;
+	text-decoration: line-through;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.buy-item {
+	border-bottom: 1px solid #fff;
+	padding: 1em 1em;
+}
+
+.buy-item:last-child {
+	border-bottom: none;
+}
+
+.purchased {
+	border-bottom: 1px solid #fff;
+	padding: 1em 1em;
+}
+
+.purchased:last-child {
+	border-bottom: none;
+}
+
+

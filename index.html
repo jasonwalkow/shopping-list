@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Shopping List</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="app">
+		<h1>My Shopping List</h1>
+		<div class="container">
+			<h2>Add Item</h2>
+			<ul class="add-item"
+				<li><input type="text" name="item" class="add-item"></li>
+				<li><button class="add">Add</button></li>
+			</ul>	
+		</div>
+		<div class="container">
+			<h2>Buy</h2>
+			<ul class="buy-item">
+				<input type="checkbox" name="check" class="checkbox">
+				<li class="to-buy">Tomatoes</li>
+				<li class="edit-delete">
+					<button class="edit">Edit</button>
+					<button class="delete">Delete</button>
+				</li>
+			</ul>
+			<ul class="buy-item">
+				<input type="checkbox" name="check" class="checkbox">
+				<li class="to-buy">Cereal</li>
+				<li class="edit-delete">
+					<button class="edit">Edit</button>
+					<button class="delete">Delete</button>
+				</li>
+			</ul>
+			<ul class="buy-item">
+				<input type="checkbox" name="check" class="checkbox">
+				<input type="text" name="edit-box">
+				<li class="edit-delete">
+					<button class="edit">Edit</button>
+					<button class="delete">Delete</button>
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<h2 id="purchased-title">Purchased</h2>
+			<ul class="purchased">
+				<input type="checkbox" name="check" class="checkbox">
+				<li class="bought">Potatoes</li>
+				<li class="edit-delete">
+					<button class="edit">Edit</button>
+					<button class="delete">Delete</button>
+				</li>
+			</ul>
+			<ul class="purchased">
+				<input type="checkbox" name="check" class="checkbox">
+				<li class="bought">Bananas</li>
+				<li class="edit-delete">
+					<button class="edit">Edit</button>
+					<button class="delete">Delete</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
