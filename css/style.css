@@ -3,8 +3,14 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+ul {
+	display: block;
+	height: 1em;
+}
+
 li {
 	list-style: none;
+	vertical-align: middle;
 }
 
 button {
@@ -33,7 +39,7 @@ h1 {
 
 .add {
 	color: #6DD4BD;
-	padding-left: 1em;
+	padding-left: 2em;
 }
 
 .add-text {
@@ -64,10 +70,11 @@ h2 {
 	color: #5E5E5E;
 	padding-left: 1em;
 	padding-right: 1em;
+	float: left;
 }
 
-.edit-delete p {
-	display: inline-block;
+.edit-delete {
+	float: right;
 	vertical-align: middle;
 }
 
@@ -98,6 +105,7 @@ input[type="text"] {
     width: 25em;
     height: 1.5em;
     margin-left: 1em;
+    float: left;
 }
 
 input[type="text"].add-item {
@@ -107,21 +115,25 @@ input[type="text"].add-item {
     width: 25em;
     height: 1.5em;
     margin-left: 0em;
+    float: left;
 }
 
 input[type="checkbox"] {
     border: none;
+    float: left;
+    vertical-align: middle;
 }
 
-ul li {
+/*ul li {
 	display: inline-block;
-}
+}*/
 
 .bought {
 	color: #CACACA;
 	text-decoration: line-through;
 	padding-left: 1em;
 	padding-right: 1em;
+	float: left;
 }
 
 .buy-item {
