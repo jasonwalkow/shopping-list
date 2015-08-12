@@ -18,23 +18,12 @@ $(document).ready(function() {
     	$(this).closest(".to-buy").remove();
 	});
 
-
 	/*$("#buy-item").on("click", ".edit", (function(){
     	$(this).closest("#item").hide().val($(this).text()).focus();
 	}));
 
 	$(".edit").focusout(function(){
     	$(this).hide().siblings(".display").show().text($(this).val());
-	});*/
-
-	// Strikethrough text if checkbox selected
-	/*$(".buy-item .checkbox").on("change", "input:checkbox", function () {
-		var item = $(this).closest(".to-buy").find(".item");
-		if($(this).is(":checked")) {
-			item.addClass("bought");
-		}
-		else
-			item.removeClass("bought"); 
 	});*/
 
 	// Add sorting to list
@@ -62,6 +51,29 @@ function addItem() {
 			$this.siblings('span').addClass('bought')
 		}
 		
+	});
+
+	var editmode = false;
+
+	$('.edit').on('click', function () {
+	    if (editmode) {
+	        $('.item').replaceWith(function () {
+	            return $("<span>", {
+	                "class": this.className,
+	                text: this.value
+	            });
+	        });
+	        editmode = false;
+	    } else {
+	        $('.item').replaceWith(function () {
+	            return $("<input>", {
+	                value: this.innerText,
+	                    "class": this.className
+	            });
+	        });
+	        editmode = true;
+	    }
+
 	});
 	$(".add-item").val("");
 }
