@@ -106,7 +106,7 @@ h2 {
 	text-transform: uppercase;
 }
 
-#item {
+.item {
 	color: #5E5E5E;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -172,29 +172,30 @@ input[type="checkbox"] {
 
 .bought {
 	color: #CACACA;
+	opacity: 0.5;
 	text-decoration: line-through;
 	padding-left: 1em;
 	padding-right: 1em;
 	float: left;
 }
 
-#to-buy {
+.to-buy {
 	border-bottom: 1px solid #fff;
 	padding-top: 1em;
 	padding-bottom: 2em;
 	margin-left: 0em;
 }
 
-#to-buy:last-child {
+.to-buy:last-child {
 	border-bottom: none;
 }
 
-#buy-item {
+.buy-item {
 	border-bottom: 1px solid #fff;
 	padding: 1em 1em;
 }
 
-#buy-item:last-child {
+.buy-item:last-child {
 	border-bottom: none;
 }
 
