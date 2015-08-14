@@ -3,14 +3,26 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+button {
+	outline: none;
+}
+
 ul {
 	display: block;
 	height: 1em;
+	height: auto;
 }
 
 li {
 	list-style: none;
 	vertical-align: middle;
+	display: block;
+	clear: both;
+}
+
+li:hover {
+	cursor: pointer;
+	opacity: 0.9;
 }
 
 button {
@@ -34,7 +46,38 @@ h1 {
 	text-transform: uppercase;
 	text-align: center;
 	padding-top: 0em;
-	margin-bottom: 0em;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 1.75rem;
+}
+
+#author {
+	color: #fff;
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 0em;
+	margin-bottom: 0.25em
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+a:visited {
+	color: #fff;
+}
+
+#instructions {
+	color: #6DD4BD;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	text-align: justify;
+	font-weight: 400;
+	font-size: 0.85em;
 }
 
 .add {
@@ -42,8 +85,8 @@ h1 {
 	padding-left: 2em;
 }
 
-.add-text {
-	padding-left: 0em;
+.add-item {
+	padding-left: 0.5em;
 }
 
 .container {
@@ -52,12 +95,15 @@ h1 {
 	border-radius: 10px;
 	padding: 0.2em 1em;
 	margin: 1em 5em;
+	height: auto;
 }
 
 h2 {
 	font-size: 1.5em;
 	color: #6DD4BD;
 	text-transform: uppercase;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 #purchased-title {
@@ -66,16 +112,30 @@ h2 {
 	text-transform: uppercase;
 }
 
-.to-buy {
+.item {
 	color: #5E5E5E;
 	padding-left: 1em;
 	padding-right: 1em;
 	float: left;
+	vertical-align: middle;
+}
+
+input[type="text"].item {
+	color: #5E5E5E;
+	padding-left: 1em;
+	padding-right: 1em;
+	float: left;
+	vertical-align: middle;
+	margin-left: 1em;
 }
 
 .edit-delete {
 	float: right;
 	vertical-align: middle;
+}
+
+.edit-delete li {
+	display: inline-block;
 }
 
 .edit {
@@ -88,7 +148,7 @@ h2 {
 .delete {
 	font-size: .8em;
 	color: #DB5959;
-	padding-left: 0.25em;
+	padding-left: 0.5em;
 }
 
 .edit:hover,
@@ -98,16 +158,6 @@ h2 {
 	cursor: pointer;
 }
 
-input[type="text"] {
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 3px;
-    width: 25em;
-    height: 1.5em;
-    margin-left: 1em;
-    float: left;
-}
-
 input[type="text"].add-item {
     font-family: 'Montserrat', sans-serif;
     border: none;
@@ -115,6 +165,18 @@ input[type="text"].add-item {
     width: 25em;
     height: 1.5em;
     margin-left: 0em;
+    margin-bottom: 1em;
+    float: left;
+}
+
+input[type="text"] {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 3px;
+    width: 25em;
+    height: 1.5em;
+    margin-left: 0em;
+    margin-bottom: 1em;
     float: left;
 }
 
@@ -124,10 +186,6 @@ input[type="checkbox"] {
     vertical-align: middle;
 }
 
-/*ul li {
-	display: inline-block;
-}*/
-
 .bought {
 	color: #CACACA;
 	text-decoration: line-through;
@@ -136,9 +194,22 @@ input[type="checkbox"] {
 	float: left;
 }
 
+.to-buy {
+	border-bottom: 1px solid #fff;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	margin-left: 0em;
+}
+
+.to-buy:last-child {
+	border-bottom: none;
+}
+
 .buy-item {
 	border-bottom: 1px solid #fff;
 	padding: 1em 1em;
+	margin-top: 0em;
+	margin-bottom: 0em;
 }
 
 .buy-item:last-child {
